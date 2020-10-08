@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_file_explorer">
+
+    <fragment
+        android:id="@+id/nav_file_explorer"
+        android:name="com.kg.inline.ui.fileexplorer.FileExplorerFragment"
+        android:label="@string/menu_fileexplorer"
+        tools:layout="@layout/fragment_file_explorer" />
+
+    <fragment
+        android:id="@+id/nav_file_extract"
+        android:name="com.kg.inline.ui.fileextract.FileExtractFragment"
+        android:label="@string/menu_fileextract"
+        tools:layout="@layout/fragment_file_extract" />
+
+    <fragment
+        android:id="@+id/nav_time_widget"
+        android:name="com.kg.inline.ui.timewidget.TimeWidgetFragment"
+        android:label="@string/menu_timewidget"
+        tools:layout="@layout/fragment_file_extract" />
+</navigation>

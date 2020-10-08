@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fileextract.FileExtractFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="文件提取" />
+
+    <Button
+        android:id="@+id/select_target_folder_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CommonButtonStyle"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="选择提取文件夹" />
+
+
+    <TextView
+        android:id="@+id/target_folder_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_target_folder_button"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/select_save_folder_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CommonButtonStyle"
+        android:layout_below="@+id/target_folder_path"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="选择保存文件夹" />
+
+    <TextView
+        android:id="@+id/save_folder_path"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_save_folder_button"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/extract_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/CommonButtonStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/save_folder_path"
+        android:layout_marginTop="16dp"
+        android:text="开始提取" />
+
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
